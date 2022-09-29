@@ -8,9 +8,9 @@ document.body.onmousemove = function (slide) {
   yPos.innerText = slide.clientY;
 };
 
-//@PananKO how to make this an event listener instead;
-// Why can't I host this on netlify
-// how I could alter the users crosshair
+/* challenge/potential route - how to make this an event listener instead;
+Implement static hosting, alter user crosshair
+*/
 
 const cursor = document.querySelector(".cursor");
 
@@ -21,8 +21,5 @@ document.addEventListener("mousemove", (e) => {
   );
 });
 
-// how to rewrite this @PananKO
-// how to do like addEventListener(mousemove, function(e) {})
-// how do do this style stuff in css
-
-//e.payeY - 10; cursor width and height are 20, 10 centers ez clap
+// challenge/potential route - use addEventListener(mousemove, function(e) {})
+//e.payeY - 10; cursor width and height are 20, 10 centers
