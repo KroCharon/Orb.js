@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Vollkorn&family=Yeseva+One&display=swap');
+
+
+body{
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    height: 98.4vh; /*height: 59.9em; */
+    /*cursor: cell;*/
+    }
+    .cursor{
+        width: 20px;
+        height: 20px;
+        border: 2px solid white;
+        border-radius: 50%;
+        position: absolute; /*I think this lets it slide past every other element and not keep it restrained */
+        transition-duration: 100ms;
+        /*transition-timing-function: ease-in-out;          RESEARCH THIS */   
+        animation: cursorAnim .4s infinite alternate;
+        }
+
+.holster{
+justify-content: center;
+text-align: center;
+padding-top: 14em;
+}
+
+
+#location{
+    height: 2.2em;
+    padding-bottom: 3em;
+    line-height: 1.6em;
+    font-family: 'Vollkorn', serif;
+    font-weight: 450;
+}
+
+#location2{
+line-height: 1.6em;
+font-family: 'Vollkorn', serif;
+font-weight: 450;
+}
+
+    .dot {
+        height: 25em;
+        width: 25em;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      #orbTitle{
+       text-align: center;
+       margin-top: 2em;
+       font-size:larger;
+       font-family: 'Vollkorn', serif;
+       font-weight: 700;
+       color: rebeccapurple;
+      }
+
+   #realTime{
+       height: 3em;
+       text-align: center;
+       align-items: center;
+
+   }
+
+   #mouse-x{
+    padding-right: 1em;
+    font-size: 200%;
+    font-weight:400;
+    font-family: 'Vollkorn', serif;
+   }
+
+   #mouse-y{
+    padding-left: 1em;
+    font-size: 200%;
+    font-weight: 400;
+     font-family: 'Vollkorn', serif;
+   }
+
+
+
+@keyframes cursorAnim {
+    from{
+        transform: scale(3);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
